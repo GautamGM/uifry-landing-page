@@ -1,9 +1,6 @@
 @import url("./Fonts/ClashDisplay_Complete/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css");
 
-@font-face {
-    font-family: 'MyCustomFont';
-    src:url('./fonts/my-custom-font.ttf') format('truetype');
-  }
-  body {
-    font-family:"my";
-  } 
+.active-link{
+  font-family: "ClashDisplay-Bold";
+  color: #FF5555;
+}
