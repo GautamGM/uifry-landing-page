@@ -6,9 +6,26 @@
     <title>Document</title>
 </head>
 <style>
-    
+    .shape{
+        width: 292px;
+        height: 150px;
+        border-radius: 100%;
+    }
+    .red{
+        background-color: #FF5555;
+        filter:blur(10px);
+       backdrop-filter: blur(10px);
+    }
+    .yellow{
+        position: relative;
+        top: -80px;
+        z-index: -1;
+        background-color: #FDE598;
+        filter:blur(10px);
+    }
 </style>
 <body>
-    
+    <div class=" shape red"></div>
+    <div class=" shape yellow"></div>
 </body>
 </html>
