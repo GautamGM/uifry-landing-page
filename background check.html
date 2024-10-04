@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+
+    .spray-gradient {
+      width: 100%;
+      height: 300px;
+      background: linear-gradient(to bottom, rgba(255, 0, 0, 0.6), rgba(255, 255, 0, 0.6)); /* Red to yellow */
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spray-gradient::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1%, transparent 1%),
+                  radial-gradient(circle, rgba(255, 255, 255, 0.1) 1%, transparent 1%);
+      background-size: 30px 30px;
+      opacity: 0.5;
+      filter: blur(3px); /* Blur effect for spray paint */
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #000;
+      font-family: Arial, sans-serif;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="spray-gradient">
+    <h1>The Best</h1>
+  </div>
+</body>
+</html>

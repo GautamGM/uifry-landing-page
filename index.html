@@ -1,70 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-</head>
-<style>
-    ul li{
-        font-family: "ClashDisplay-Medium";
-        font-weight:500;
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+    ul li {
+      font-family: "ClashDisplay-Medium";
     }
-    button{
-        font-family: "ClashDisplay-Medium";
-        border-radius: 2px;
+    button {
+      font-family: "ClashDisplay-Medium";
+      border-radius: 2px;
     }
-</style>
-<body>
-    <div class="main-container">
-        <div class="container-uifry">
-            <!-- header -->
-             <header class=" pl-[20px] pr-[20px] lg:pl-[90px] lg:pr-[90px] h-[80px] border  flex items-end" >
-                <nav class="flex items-center justify-between  w-full " >
-                    <div class="sm:hidden" ><i class="fa-solid fa-bars"></i></div>
-                    <div class="log-container flex items-center ">
-                        <div class="logo">
-                            <img src="./images/logo uifry.png" alt="logo">
-                        </div>
-                        <div class="links w-[380px] hidden sm:block">
-                            <ul class="flex justify-evenly  " >
-                                <li><a href="#" class="active-link">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Features</a></li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    
-                        <button class=" w-[80px] h-[35px] rounded-[20px] sm:rounded-[2px] text-[12px] md:text-[18px] md:w-[180px] lg:h-[50px] bg-[#000000] text-white  shadow-md" >Download</button>
-                   
-                </nav>
-             </header>
-             <!-- end-header -->
-              <!-- ####################################################################################> -->
-               <!-- hero-section-start -->
-                <section>
-                    <div class=" hidden hero-container pl-[90px] pr-[90px] h-[90vh] fle w-full ">
-                        <div class="left-title-div bg-black w-[50%]">
-                           
-                        </div>
-                        <div class="right-image-div bg-[red] w-[50%]">
-                            safd
-                        </div>
-                    </div>
-                </section>
-                <!-- End-hero section -->
 
+    .imagen-grediant {
+      position: absolute;
+      top: 130px;
+      left: 190px;
+    }
+    .shape {
+      max-width: 290px;
+      border: 1px solid black;
+      height: 137px;
+      border-radius: 100%;
+    }
+    .bg-yellow-color {
+      position: absolute;
+      top: 23px;
+      left: -30px;
+      background: #FDE598;
+      z-index: -1;
+      opacity:1;
+      filter: blur(10px)
 
-                <!-- fotter -->
-                 <footer>
+    }
+    .bg-red-color {
+      position: absolute;
+      top: -50px;
+      background: #FF5555;
+      filter: blur(20px );
+      opacity:1;
+    }
+    .image-div {
+      width: 100%;
+     height: 400px;
+      background-position-x:-30px ;
+      background-position-y: 30px;
+      background-size:contain;
+      object-fit: cover;
+      background-image: url('./images/Group\ 35924.svg');
+      background-repeat: no-repeat;
+    }
+  </style>
+  <body>
+    <div class="main-container max-w-[1920px] mx-auto">
+      <div class="container-uifry">
+        <!-- header -->
+        <header
+          class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px] h-[80px] border flex items-end"
+        >
+          <nav class="flex items-center justify-between w-full">
+            <div class="sm:hidden"><i class="fa-solid fa-bars"></i></div>
+            <div class="log-container flex items-center">
+              <div class="logo">
+                <img src="./images/logo uifry.png" alt="logo" />
+              </div>
+              <div class="links w-[400px] hidden sm:block">
+                <ul class="flex justify-evenly">
+                  <li><a href="#" class="active-link">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Features</a></li>
+                </ul>
+              </div>
+            </div>
 
-                 </footer>
+            <button
+              class="w-[80px] h-[35px] sm:rounded-[2px] text-[12px] lg:text-[18px] md:w-[100px] font-[ClashDisplay-Medium] md:h-[40px] lg:w-[180px] lg:h-[50px] bg-[#000000] text-white shadow-md"
+            >
+              Download
+            </button>
+          </nav>
+        </header>
+        <!-- end-header -->
+        <!-- ####################################################################################> -->
+        <!-- hero-section-start -->
+        <section>
+          <div
+            class="hero-container  pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px] flex flex-col-reverse sm:flex-row sm:justify-normal justify-center  w-full "
+          >
+            <div
+              class="left-title-div flex flex-col text-center md:text-start    border w-[100%] sm:w-[50%]"
+            >
+              <div class="inner-ledt-div relative flex md:h-[400px] items-end  ">
+                  <div class="absolute left-[-85px] top-[30px]" ><img src="./images/Star 3.png" alt=""></div>
+                <div class="imagen-grediant border z-[-1]">
+                  <div class="shape bg-red-color"></div>
+                  <div class="shape bg-yellow-color"></div>
+                </div>
+                <div class="title-inner-div flex flex-col md:gap-[20px]">
+                  <div
+                    class="title text-[24px]  md:text-[64px] font-[ClashDisplay-Bold] md:leading-[65px] max-w-[618px]"
+                  >
+                    <h1>Make The Best Financial Decisions</h1>
+                  </div>
+                  <div
+                    class="  para-graph max-w-[638px] text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]"
+                  >
+                    <p>
+                      Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque
+                      Aliquet Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem
+                      Porttitor.
+                    </p>
+                  </div>
+                  <div class="button mt-[20px] md:flex gap-[30px]">
+                    <button
+                      class="  w-[80px] flex justify-center gap-2 font-[ClashDisplay-Medium] items-center h-[35px] sm:rounded-[2px] text-[12px] lg:text-[18px] md:w-[100px] md:h-[40px] lg:w-[180px] lg:h-[50px] bg-[#000000] text-white shadow-md"
+                    >
+                      Get Started<img src="./images/array-btn.png" alt="" />
+                    </button>
+                    <!-- watch button -->
+                     <button class="flex items-center drop-shadow-md text-black gap-2 text-[18px] font-[ClashDisplay-Medium]" >
+                      <img src="./images/playbtn.png" alt=""><span>Watch Video</span>
+                      
+                     </button>
+                  </div>
+                </div>
+                
+            </div>
+            <div class="image-div border ">
+              <img src="./images/Star 3.png" class="relative top-[70px] left-[150px] " alt="start">
+            </div>
         </div>
+            <div class="right-image-div bg-red-400 flex justify-end sm:w-[50%]">
+              <img src="./images/right-ph-3.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- End-hero section -->
+         
+        <!-- Advantages Section -->
+        <section class="hidden">
+          <div
+            class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px]"
+          >
+            <div class="flex flex-wrap justify-between items-center">
+              <!-- Text Content -->
+              <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                <h5 class="text-red-500 font-bold text-lg mb-2">Advantages</h5>
+                <h1 class="text-4xl font-extrabold mb-4">Why Choose Uifry?</h1>
+                <div class="flex items-center mb-4">
+                  <span class="bg-red-100 text-red-500 p-2 rounded-full">
+                    <!-- Icon (you can replace this with an actual icon if needed) -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 16h-1v-4H8l4-4 4 4h-3v4z"
+                      />
+                    </svg>
+                  </span>
+                  <h2 class="font-bold text-xl ml-4">Clever Notifications</h2>
+                </div>
+                <p class="text-gray-600">
+                  Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+                  Ultricies. In Ultrices Malesuada Elit Mauris Etiam Odio. Duis
+                  Tristique Lacus, Et Blandit Viverra Nisl Velit. Sed Mattis
+                  Rhoncus, Diam Suspendisse Sit Nunc, Gravida Eu. Lectus Eget
+                  Eget Ac Dolor Neque Lorem Sapien, Suspendisse Aliquam.
+                </p>
+              </div>
+
+              <!-- Image Section -->
+              <div class="relative w-full md:w-1/2">
+                <!-- Gradient Background -->
+                <div
+                  class="absolute inset-0 w-72 h-72 bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 rounded-full filter blur-3xl opacity-50"
+                ></div>
+
+                <!-- Vector Image (Simulating a Vector Design) -->
+                <div class="absolute -top-8 right-0 w-80 h-80">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="text-gray-400 w-full h-full opacity-20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6 3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+
+                <!-- Phone Image -->
+                <div class="relative z-10">
+                  <img
+                    src="https://via.placeholder.com/200x400"
+                    alt="iPhone"
+                    class="mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end-advance################################################################## -->
+
+        <!-- FAQ Section -->
+        <section class="py-8 hidden">
+          <div class="container mx-auto px-4">
+            <!-- FAQ Title -->
+            <div class="mb-8">
+              <h5 class="text-red-500 font-bold text-lg">FAQ</h5>
+              <h1 class="text-4xl font-extrabold">
+                Frequently Asked Questions
+              </h1>
+            </div>
+
+            <!-- FAQ Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- FAQ Card 1 -->
+              <div class="bg-red-400 p-6 rounded-md shadow-md">
+                <h2 class="text-white font-bold text-xl mb-4">
+                  The Best Financial Accounting App Ever!
+                </h2>
+                <p class="text-white text-sm">
+                  "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+                  Ultricies. In Ultrices Malesuada Elit Mauris."
+                </p>
+              </div>
+
+              <!-- FAQ Card 2 -->
+              <div class="bg-white p-6 rounded-md shadow-md">
+                <h2 class="text-black font-bold text-xl mb-4">
+                  The Best Financial Accounting App Ever!
+                </h2>
+                <p class="text-gray-600 text-sm">
+                  "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+                  Ultricies. In Ultrices Malesuada Elit Mauris."
+                </p>
+              </div>
+
+              <!-- FAQ Card 3 -->
+              <div class="bg-white p-6 rounded-md shadow-md">
+                <h2 class="text-black font-bold text-xl mb-4">
+                  The Best Financial Accounting App Ever!
+                </h2>
+                <p class="text-gray-600 text-sm">
+                  "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+                  Ultricies. In Ultrices Malesuada Elit Mauris."
+                </p>
+              </div>
+
+              <!-- FAQ Card 4 -->
+              <div class="bg-red-400 p-6 rounded-md shadow-md">
+                <h2 class="text-white font-bold text-xl mb-4">
+                  The Best Financial Accounting App Ever!
+                </h2>
+                <p class="text-white text-sm">
+                  "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+                  Ultricies. In Ultrices Malesuada Elit Mauris."
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- enfd of faq################################################################# -->
+      </div>
     </div>
-</body>
+  </body>
 </html>
