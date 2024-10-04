@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <style>
@@ -21,13 +22,14 @@
     <div class="main-container">
         <div class="container-uifry">
             <!-- header -->
-             <header class=" pl-[40px] pr-[40px] md:pl-[90px] md:pr-[90px] h-[70px] border  flex items-end" >
+             <header class=" pl-[20px] pr-[20px] lg:pl-[90px] lg:pr-[90px] h-[80px] border  flex items-end" >
                 <nav class="flex items-center justify-between  w-full " >
+                    <div class="sm:hidden" ><i class="fa-solid fa-bars"></i></div>
                     <div class="log-container flex items-center ">
                         <div class="logo">
                             <img src="./images/logo uifry.png" alt="logo">
                         </div>
-                        <div class="links w-[380px]">
+                        <div class="links w-[380px] hidden sm:block">
                             <ul class="flex justify-evenly  " >
                                 <li><a href="#" class="active-link">Home</a></li>
                                 <li><a href="#">About Us</a></li>
@@ -38,7 +40,7 @@
                         </div>
                     </div>
                     
-                        <button class=" max-w-[180px] h-[50px] bg-[#000000] text-white  shadow-md" >Download</button>
+                        <button class=" w-[80px] h-[35px] rounded-[20px] sm:rounded-[2px] text-[12px] md:text-[18px] md:w-[180px] lg:h-[50px] bg-[#000000] text-white  shadow-md" >Download</button>
                    
                 </nav>
              </header>
@@ -46,7 +48,7 @@
               <!-- ####################################################################################> -->
                <!-- hero-section-start -->
                 <section>
-                    <div class="hero-container pl-[90px] pr-[90px] h-[90vh] flex w-full ">
+                    <div class=" hidden hero-container pl-[90px] pr-[90px] h-[90vh] fle w-full ">
                         <div class="left-title-div bg-black w-[50%]">
                            
                         </div>
