@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <style>
@@ -52,7 +53,7 @@
     }
     .image-div {
       width: 100%;
-      height:250px!important;
+      height: 250px !important;
       background-position-x: -30px;
       background-position-y: 30px;
       background-size: contain;
@@ -60,15 +61,15 @@
       background-image: url("./images/Group\ 35924.svg");
       background-repeat: no-repeat;
     }
-    .feature-bg{
+    .feature-bg {
       width: 130px;
       height: 90px;
       background-image: url("./images/her0-bg-left-side.png");
       background-repeat: no-repeat;
       background-size: cover;
     }
-    h4{
-      font-family:"ClashDisplay-Semibold";
+    h4 {
+      font-family: "ClashDisplay-Semibold";
       font-size: 18px;
     }
   </style>
@@ -77,7 +78,7 @@
       <div class="container-uifry">
         <!-- header -->
         <header
-          class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px] h-[80px] border flex items-end"
+          class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px] h-[80px]  flex items-end"
         >
           <nav class="flex items-center justify-between w-full">
             <div class="sm:hidden"><i class="fa-solid fa-bars"></i></div>
@@ -110,21 +111,21 @@
             class="hero-container pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px] flex flex-col-reverse md:flex-row sm:justify-normal justify-center w-full"
           >
             <div
-              class="left-title-div flex flex-col text-center sm:text-start  w-[100%] sm:w-[50%]"
+              class="left-title-div flex flex-col text-center sm:text-start w-[100%] sm:w-[50%]"
             >
               <div class="inner-ledt-div relative flex sm:h-[400px] items-end">
                 <div class="absolute left-[-85px] top-[30px]">
                   <img src="./images/Star 3.png" alt="" />
                 </div>
-                <div class="imagen-grediant  -z-10">
+                <div class="imagen-grediant -z-10">
                   <div class="shape bg-red-color"></div>
                   <div class="shape bg-yellow-color"></div>
                 </div>
-                <div class="title-inner-div flex flex-col md:gap-[20px]">
-                  <div
-                    class="title text-[24px] md:text-[30px] xl:text-[58px] 2xl:text-[64px] font-[ClashDisplay-Bold] lg:leading-[65px] max-w-[618px]"
+                <div  class="title-inner-div  flex flex-col md:gap-[20px]">
+                  <div data-aos="fade-right" data-aos-duration="1000"
+                    class="title text-[24px] md:text-[30px] xl:text-[56px] 2xl:text-[64px] font-[ClashDisplay-Bold] lg:leading-[65px] max-w-[618px]"
                   >
-                    <h1>Make The Best Financial Decisions</h1>
+                    <h1  >Make The Best Financial Decisions</h1>
                   </div>
                   <div
                     class="para-graph max-w-[638px] text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]"
@@ -154,7 +155,7 @@
                   </div>
                 </div>
               </div>
-              <div class="image-div md:!h-[400px] border">
+              <div class="image-div md:!h-[400px] ">
                 <img
                   src="./images/Star 3.png"
                   class="relative top-[70px] left-[150px]"
@@ -171,104 +172,102 @@
 
         <!-- Feature-section -->
         <section>
-          <div class="Featuresection  flex justify-between ">
-            <div class="feature-main-div pl-[20px] pr-[20px] md:pl-[60px]  lg:pl-[140px]  w-full flex flex-col md:flex-row justify-between">
-              <div class="image-div-iphone  xl:h-[600px] w-[50%]">
-                <img src="./images/feature-iphone-left.png " class="w-[100%] h-[100%] object-contain"  alt="">
+          <div class="Featuresection flex justify-between">
+            <div
+              class="feature-main-div pl-[20px] pr-[20px] md:pl-[60px] lg:pl-[140px] w-full flex flex-col md:flex-row justify-between"
+            >
+              <div class="image-div-iphone xl:h-[450px] flex justify-center items-center mt-[80px] lg:w-[50%]">
+                <img
+                  src="./images/feature-iphone-left.png "
+                  class="w-[100%] xl:h-[590px] object-contain"
+                  alt=""
+                />
               </div>
-              <div class="discription-div text-center md:text-start  xl:w-[50%]">
-                <div class="feature-discription flex flex-col mt-[40px] gap-5 ">
+              <div class="discription-div  md:text-start xl:w-[50%]">
+                <div class="feature-discription flex flex-col mt-[40px] gap-5">
                   <div class="sub-title-div">
-                    <p class="text-[18px] text-[#FF5555] font-[ClashDisplay-Medium] tracking-[3px] " >FEATURES</p>
-                    <h3 class="max-w-[359px] text-[28px] xl:text-[48px] font-[ClashDisplay-Bold]" >Uifry Premium</h3>
+                    <p
+                      class="text-center md:text-start text-[18px] text-[#FF5555] font-[ClashDisplay-Medium] tracking-[3px]"
+                    >
+                      FEATURES
+                    </p>
+                    <h3
+                      class=" text-center md:text-start max-w-[359px] text-[28px] xl:text-[48px] font-[ClashDisplay-Bold]"
+                    >
+                      Uifry Premium
+                    </h3>
                   </div>
                   <!-- buget-1 div -->
-                   <div class="buget-div  ">
-                    <div class="icon-subtitle flex gap-2 ">
-                      <span><img src="./images/star-05.png" alt=""></span>
+                  <div class="buget-div">
+                    <div class="icon-subtitle flex gap-2">
+                      <span><img src="./images/star-05.png" alt="" /></span>
                       <h4>Budgeting Intervals</h4>
                     </div>
                     <div
-                    class="para-graph max-w-[638px] text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]"
-                  >
-                    <p>
-                      Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque
-                      Aliquet Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem
-                      Porttitor.
-                    </p>
+                      class="para-graph max-w-[638px] text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]"
+                    >
+                      <p>
+                        Cum Et Convallis Risus Placerat Aliquam, Nunc.
+                        Scelerisque Aliquet Faucibus Tincidunt Eu Adipiscing
+                        Sociis Arcu Lorem Porttitor.
+                      </p>
+                    </div>
                   </div>
-                   </div>
                   <!-- buget-2 div -->
-                  <div class="buget-div  ">
-                    <div class="icon-subtitle flex gap-2 ">
-                      <span><img src="./images/cube-02.png" alt=""></span>
+                  <div class="buget-div">
+                    <div class="icon-subtitle flex gap-2">
+                      <span><img src="./images/cube-02.png" alt="" /></span>
                       <h4>Budgeting Intervals</h4>
                     </div>
                     <div
-                    class="para-graph max-w-[638px] text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]"
-                  >
-                    <p>
-                      Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque
-                      Aliquet Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem
-                      Porttitor.
-                    </p>
+                      class="para-graph max-w-[638px] text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]"
+                    >
+                      <p>
+                        Cum Et Convallis Risus Placerat Aliquam, Nunc.
+                        Scelerisque Aliquet Faucibus Tincidunt Eu Adipiscing
+                        Sociis Arcu Lorem Porttitor.
+                      </p>
+                    </div>
                   </div>
-                   </div>
                   <!-- buget-3 div -->
-                  <div class="buget-div  ">
-                    <div class="icon-subtitle flex gap-2 ">
-                      <span><img src="./images/cube-04.png" alt=""></span>
+                  <div class="buget-div">
+                    <div class="icon-subtitle flex gap-2">
+                      <span><img src="./images/cube-04.png" alt="" /></span>
                       <h4>Budgeting Intervals</h4>
                     </div>
                     <div
-                    class="para-graph max-w-[638px] text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]"
-                  >
-                    <p>
-                      Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque
-                      Aliquet Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem
-                      Porttitor.
-                    </p>
+                      class="para-graph max-w-[638px] text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]"
+                    >
+                      <p>
+                        Cum Et Convallis Risus Placerat Aliquam, Nunc.
+                        Scelerisque Aliquet Faucibus Tincidunt Eu Adipiscing
+                        Sociis Arcu Lorem Porttitor.
+                      </p>
+                    </div>
                   </div>
-                   </div>
-                  
                 </div>
               </div>
             </div>
-            
           </div>
         </section>
 
         <!-- Advantages Section -->
-        <section class="hidden">
+        <section >
           <div
             class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px]"
           >
-            <div class="flex flex-wrap justify-between items-center">
+            <div class="flex flex-col-reverse md:flex-row justify-between items-center">
               <!-- Text Content -->
-              <div class="w-full md:w-1/2 mb-8 md:mb-0">
-                <h5 class="text-red-500 font-bold text-lg mb-2">Advantages</h5>
-                <h1 class="text-4xl font-extrabold mb-4">Why Choose Uifry?</h1>
-                <div class="flex items-center mb-4">
-                  <span class="bg-red-100 text-red-500 p-2 rounded-full">
-                    <!-- Icon (you can replace this with an actual icon if needed) -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M13 16h-1v-4H8l4-4 4 4h-3v4z"
-                      />
-                    </svg>
-                  </span>
-                  <h2 class="font-bold text-xl ml-4">Clever Notifications</h2>
+              <div class=" max-w-[535px] text-center md:text-start md:w-1/2 mb-8 md:mb-0">
+                <h5 class="text-[18px] text-[#FF5555] font-[ClashDisplay-Medium] tracking-[3px]">ADVANTAGE</h5>
+                <h1 class=" text-[24px] xl:text-[48px] font-[ClashDisplay-Bold] text-[#000000]">Why Choose Uifry?</h1>
+                <div class="flex items-center  mb-4">
+                  <div class="bg-[#FF5555] w-[35px] h-[35px] xl:w-[48px] xl:h-[48px]  rounded-full">
+                    <img src="./images/bell-icon.png" alt="bell-icon ">
+                  </div>
+                  <h2 class=" text-[18px] text-nowrap lg:text-[28px] font-[ClashDisplay-Semibold] ml-2 lg:ml-4">Clever Notifications</h2>
                 </div>
-                <p class="text-gray-600">
+                <p class="text-start text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]">
                   Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
                   Ultricies. In Ultrices Malesuada Elit Mauris Etiam Odio. Duis
                   Tristique Lacus, Et Blandit Viverra Nisl Velit. Sed Mattis
@@ -281,31 +280,12 @@
               <div class="relative w-full md:w-1/2">
                 <!-- Gradient Background -->
                 <div
-                  class="absolute inset-0 w-72 h-72 bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 rounded-full filter blur-3xl opacity-50"
+                  class="absolute inset-0 xl:w-72 h-72 bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 rounded-full filter blur-3xl opacity-50"
                 ></div>
-
-                <!-- Vector Image (Simulating a Vector Design) -->
-                <div class="absolute -top-8 right-0 w-80 h-80">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="text-gray-400 w-full h-full opacity-20"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 8v4l3 3m6 3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-
                 <!-- Phone Image -->
                 <div class="relative z-10">
                   <img
-                    src="https://via.placeholder.com/200x400"
+                    src="./images/advantage-right-iphn-image.png"
                     alt="iPhone"
                     class="mx-auto"
                   />
@@ -315,6 +295,154 @@
           </div>
         </section>
         <!-- end-advance################################################################## -->
+
+
+<!-- Fully- coustomization -->
+<section >
+  <div data-aos="fade-right" data-aos-duration="1000"
+    class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px]"
+  >
+    <div class="flex flex-wrap justify-between items-center">
+     
+     <!-- Image Section -->
+     <div class="relative w-full md:w-1/2">
+      <!-- Gradient Background -->
+      <div
+        class="absolute inset-0 xl:w-72 h-72 bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 rounded-full filter blur-3xl opacity-50"
+      ></div>
+      <!-- Phone Image -->
+      <div class="relative z-10">
+        <img
+          src="./images/advantage-right-iphn-image.png"
+          alt="iPhone"
+          class="mx-auto"
+        />
+      </div>
+    </div>
+      <!-- Text Content -->
+      <div class=" max-w-[535px]  md:text-start md:w-1/2 mb-8 md:mb-0">
+        <div class="flex items-center  mb-4">
+          <div class="bg-[#FF5555] w-[35px] h-[35px] xl:w-[48px] xl:h-[48px]  rounded-full">
+            <img src="./images/bell-icon.png" alt="bell-icon ">
+          </div>
+          <h2 class=" text-[18px] text-nowrap lg:text-[28px] font-[ClashDisplay-Semibold] ml-2 lg:ml-4">Fully Customizable</h2>
+        </div>
+        <p class="text-[12px] md:text-[18px] text-[#808080] font-[ClashDisplay-Medium]">
+          Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+          Ultricies. In Ultrices Malesuada Elit Mauris Etiam Odio. Duis
+          Tristique Lacus, Et Blandit Viverra Nisl Velit. Sed Mattis
+          Rhoncus, Diam Suspendisse Sit Nunc, Gravida Eu. Lectus Eget
+          Eget Ac Dolor Neque Lorem Sapien, Suspendisse Aliquam.
+        </p>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+        <!-- Container Testimonial-->
+       <section class="hidden" >
+        <div class=" min-h-screen flex items-center justify-center p-6">
+          <div class="w-full max-w-5xl">
+            <!-- Testimonial Heading -->
+            <div class="text-center">
+              <p class="uppercase text-sm tracking-wider text-gray-500">
+                Testimonial
+              </p>
+              <h1 class="text-4xl font-bold text-black mt-2">
+                What Our Users Say About Us?
+              </h1>
+            </div>
+
+            <!-- Main Testimonial Section -->
+            <div
+              class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+            >
+              <!-- Circles with Images -->
+              <div class="relative h-64 flex justify-center items-center">
+                <!-- Large circles -->
+                <div
+                  class="absolute w-48 h-48 bg-gradient-to-r from-orange-400 to-red-500 rounded-full opacity-30"
+                ></div>
+                <div
+                  class="absolute w-72 h-72 border border-gray-300 rounded-full"
+                ></div>
+                <div
+                  class="absolute w-96 h-96 border border-gray-300 rounded-full"
+                ></div>
+
+                <!-- User images -->
+                <img
+                  src="https://randomuser.me/api/portraits/men/1.jpg"
+                  class="absolute w-16 h-16 rounded-full top-4 left-10"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/women/2.jpg"
+                  class="absolute w-12 h-12 rounded-full top-16 right-12"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/men/3.jpg"
+                  class="absolute w-16 h-16 rounded-full bottom-4 left-6"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/women/4.jpg"
+                  class="absolute w-20 h-20 rounded-full bottom-10 right-4"
+                />
+
+                <!-- Main person -->
+                <img
+                  src="https://randomuser.me/api/portraits/men/5.jpg"
+                  class="w-32 h-32 rounded-full z-10"
+                />
+              </div>
+
+              <!-- Testimonial Text Section -->
+              <div>
+                <h2 class="text-xl font-semibold">
+                  The Best Financial Accounting App Ever!
+                </h2>
+                <p class="mt-4 text-gray-600">
+                  "Arcu At Dictum Sapien, Mollis, Vulputate Sit Id Accumsan,
+                  Ultrices, Ut Ultrices Malesuada Elit Mauris Etiam Odio. Duis
+                  Tristique Lacus, Et Blandit Vivamus Nisl Velit. Sed Mattis
+                  Rhoncus, Diam Suspendisse Sit Nunc, Gravida Elit. Lectus Eget
+                  Eget Ac Dolor Neque Lorem Sapien, Suspendisse Aliquam."
+                </p>
+
+                <!-- User name -->
+                <div class="flex items-center mt-4">
+                  <span class="font-semibold">Nick Jonse</span>
+                </div>
+
+                <!-- Small user avatars -->
+                <div class="mt-6 flex space-x-2">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/6.jpg"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <img
+                    src="https://randomuser.me/api/portraits/women/7.jpg"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <img
+                    src="https://randomuser.me/api/portraits/men/8.jpg"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <img
+                    src="https://randomuser.me/api/portraits/women/9.jpg"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <img
+                    src="https://randomuser.me/api/portraits/men/10.jpg"
+                    class="w-8 h-8 rounded-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
 
         <!-- FAQ Section -->
         <section class="py-8 hidden">
@@ -372,11 +500,233 @@
                   Ultricies. In Ultrices Malesuada Elit Mauris."
                 </p>
               </div>
+
+              <!-- FAQ Card 5 -->
+              <div class="bg-red-400 p-6 rounded-md shadow-md">
+                <h2 class="text-white font-bold text-xl mb-4">
+                  The Best Financial Accounting App Ever!
+                </h2>
+                <p class="text-white text-sm">
+                  "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+                  Ultricies. In Ultrices Malesuada Elit Mauris."
+                </p>
+              </div>
+              <!-- FAQ Card 6 -->
+              <div class="bg-white p-6 rounded-md shadow-md">
+                <h2 class="text-black font-bold text-xl mb-4">
+                  The Best Financial Accounting App Ever!
+                </h2>
+                <p class="text-gray-600 text-sm">
+                  "Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+                  Ultricies. In Ultrices Malesuada Elit Mauris."
+                </p>
+              </div>
             </div>
           </div>
         </section>
         <!-- enfd of faq################################################################# -->
+
+        <!-- Ready-to-get-satated -->
+        <!-- Container -->
+       <section class="hidden">
+        <div
+        class="min-h-screen flex items-center justify-center p-6 bg-black relative"
+      >
+        <!-- Gradient Background -->
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-500 via-transparent to-transparent opacity-50"
+        ></div>
+
+        <!-- Star-like Background Elements -->
+        <div
+          class="absolute top-10 right-16 w-8 h-8 bg-white rounded-full opacity-20"
+        ></div>
+        <div
+          class="absolute top-20 right-40 w-4 h-4 bg-white rounded-full opacity-20"
+        ></div>
+        <div
+          class="absolute top-32 left-10 w-6 h-6 bg-white rounded-full opacity-20"
+        ></div>
+
+        <div
+          class="relative z-10 w-full max-w-6xl flex items-center justify-between"
+        >
+          <!-- Left Content Section -->
+          <div class="text-white space-y-6">
+            <h1 class="text-4xl font-bold">Ready To Get Started?</h1>
+            <p class="text-gray-300">
+              Risus Habitant Leo Egestas Mauris Diam Eget Morbi Tempus
+              Vulputate.
+            </p>
+
+            <!-- Download Button -->
+            <a
+              href="#"
+              class="inline-flex items-center bg-white text-black font-medium px-6 py-3 rounded-lg hover:bg-gray-200"
+            >
+              Download App
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg"
+                class="w-5 h-5 ml-3"
+                alt="Apple Logo"
+              />
+            </a>
+          </div>
+
+          <!-- Right Image Section -->
+          <div class="relative">
+            <!-- Background glow and curved lines (optional decoration) -->
+            <div
+              class="absolute w-96 h-96 bg-gradient-to-r from-red-500 to-orange-500 rounded-full opacity-50 top-[-50px] left-[-50px]"
+            ></div>
+            <div
+              class="absolute w-[500px] h-[500px] border border-gray-600 rounded-full top-[-150px] right-[-100px]"
+            ></div>
+
+            <!-- Mockup of Phone Screens -->
+            <div class="flex space-x-8">
+              <img
+                src="https://i.imgur.com/EOgMBLA.png"
+                class="w-40 h-80 transform rotate-[-10deg] shadow-lg"
+              />
+              <img
+                src="https://i.imgur.com/EOgMBLA.png"
+                class="w-40 h-80 transform rotate-[10deg] shadow-lg"
+              />
+              <img
+                src="https://i.imgur.com/EOgMBLA.png"
+                class="w-40 h-80 transform rotate-[-5deg] shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+       </section>
+        <!-- ######################################################################End -->
+
+        <!-- Footer -->
+        <footer class="bg-white py-8 hidden ">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between items-start">
+              <!-- Logo and Contact Info -->
+              <div class="w-full md:w-1/5 mb-6 md:mb-0">
+                <div class="flex items-center mb-4">
+                  <img
+                    src="https://via.placeholder.com/30"
+                    alt="Logo"
+                    class="mr-2"
+                  />
+                  <span class="font-bold text-lg">uifry</span>
+                </div>
+                <p class="text-sm text-gray-500">Help@FryBox.Com</p>
+                <p class="text-sm text-gray-500">+1234.456.678.89</p>
+              </div>
+
+              <!-- Links -->
+              <div class="w-full md:w-1/5 mb-6 md:mb-0">
+                <h5 class="font-bold mb-4 text-gray-900">Links</h5>
+                <ul>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Bookings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Blog</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Legal -->
+              <div class="w-full md:w-1/5 mb-6 md:mb-0">
+                <h5 class="font-bold mb-4 text-gray-900">Legal</h5>
+                <ul>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Terms Of Use</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Cookie Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Product -->
+              <div class="w-full md:w-1/5 mb-6 md:mb-0">
+                <h5 class="font-bold mb-4 text-gray-900">Product</h5>
+                <ul>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Take Tour</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Live Chat</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900"
+                      >Reviews</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Newsletter -->
+              <div class="w-full md:w-2/5">
+                <h5 class="font-bold mb-4 text-gray-900">Newsletter</h5>
+                <p class="text-sm text-gray-500 mb-4">Stay Up To Date</p>
+                <form class="flex">
+                  <input
+                    type="email"
+                    class="px-4 py-2 w-full text-gray-700 bg-gray-200 rounded-l-lg focus:outline-none"
+                    placeholder="Your email"
+                  />
+                  <button
+                    class="px-4 py-2 bg-black text-white rounded-r-lg hover:bg-gray-800"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-8 border-t border-gray-200 pt-4">
+              <p class="text-center text-sm text-gray-500">
+                &copy; 2022 UIFry.Com All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
